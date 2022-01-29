@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View the best and funniest meme's on TallerThanShort's RKRL!">
+    <link rel="stylesheet" href="style.css">
+    <title>RKRL</title>
+</head>
+<body>
+    <div id="container">
+        <button id="button1" style="block">Press anywhere for funni memes!!!</button>
+    </div>
+</body>
+<script>
+    const button = document.getElementById("button1");
+    const div = document.getElementById("container");
+
+    button.addEventListener("click", ()=>{
+        const html = `
+        <img src="https://im3.ezgif.com/tmp/ezgif-3-9eb0b479f5.gif" alt="Get Rick Rolled!">
+        `
+        div.innerHTML = html;
+    });
+</script>
+</html>
